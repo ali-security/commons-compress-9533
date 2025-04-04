@@ -59,4 +59,4 @@ script:
   - mvn -V --no-transfer-progress -Ddoclint=none
  
 after_success:
-  - mvn -V --no-transfer-progress clean test jacoco:report coveralls:report -Ptravis-jacoco javadoc:javadoc -Ddoclint=none
+  - mvn -V --no-transfer-progress clean test jacoco:report -Ptravis-jacoco javadoc:javadoc -Ddoclint=none
